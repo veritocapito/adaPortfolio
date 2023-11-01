@@ -9,12 +9,16 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <label for="menu" class="menu">
+                    <i class="bi-list"></i>
+                </label>
+                <input type="checkbox" name="menu" id="menu">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#home">Home</a></li>
+                    <li class="nav__list-item"><a href="#projects">Projects</a></li>
+                    <li class="nav__list-item"><a href="#skills">Skills</a></li>
+                    <li class="nav__list-item"><a href="#education">Education</a></li>
+                    <li class="nav__list-item contact"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,7 +32,7 @@
                 <div>
                     <img src="" alt="profile illustration">
                 </div>
-                <div><a href="#projects">Discover What I Do</a></div>
+                <div><a href="#projects" class="callToAction">Discover What I Do</a></div>
             </div>
         </main>
         <section id="projects">
@@ -211,5 +215,6 @@
             </div>
             <p>© 2023 - Develop by @VeroDev</p>
         </footer>
+        <a href="#" class="back-to-top"><i class="bi bi-arrow-up-square-fill icon-up"></i></a>
     </body>
 </html>
