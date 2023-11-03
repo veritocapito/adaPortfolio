@@ -21,9 +21,13 @@ a {
     --darkPink: #da4167;
     --lightViolet: #c09bd8;
     --violet: #9f84bd;
-    --darkViolet: #242038;
+    --darkViolet: #440381;
     --white: #f0f7f4;
     --gray: #373f47;
+}
+
+#favicon{
+    color: var(--darkPink);
 }
 
 @media (width >= 320px){
@@ -33,7 +37,10 @@ a {
         background: var(--gray);
         height: 95px;
         width: 100%;
-        position: sticky;
+        position: fixed;
+        top: 0;
+        transition: 0.4s;
+        padding: 2rem 0;
     }
 
     nav{
@@ -61,6 +68,12 @@ a {
 
     .nav__list-item a{
         color: var(--darkPink);
+
+    }
+
+    .nav__list-item a:hover{
+        color: var(--white);
+        
     }
 
     .nav__list-item {
@@ -71,6 +84,7 @@ a {
     .nav__list-item:hover{
         width: 100%;
         text-align: center;
+        color: var(--white);
         background-color: var(--darkPink);
     }
 
@@ -94,6 +108,55 @@ a {
         clip-path: polygon(0 0 , 100% 0, 100% 100%, 0 100%);
     }
 
+    /* About */
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: var(--lightPink);
+        align-items: center;
+        padding: 2rem 0;
+        min-height: calc(100vh - 95px);
+        margin-top: 95px;
+    }
+
+    .about__content{
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about__content-title{
+        color: var(--darkPink);
+        font-size: 36px;
+        margin: 1rem 0;
+    }
+
+    h4.about__content-subtitle{
+        color: var(--darkViolet);
+    }
+
+    .about__content-img{
+        min-width: 350px;
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    .about__content-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__content-link{
+        width: fit-content;
+        margin: 1rem 0;
+        color: var(--white);
+        background-color: var(--darkPink);
+        padding: 0.8rem;
+    }
+
     .back-to-top{
         position: fixed;
         right: 10px;
@@ -111,6 +174,12 @@ a {
 
 @media (width >= 768px)  {
 
+    /* Header + Nav */
+
+    header{
+        box-shadow: 0 0 29px 0 #373f4725;
+
+    }
     .nav__list{
         clip-path: none;
         display: flex;
@@ -146,4 +215,17 @@ a {
     label.menu{
         display: none;
     }
+
+    /* About */
+
+    .about{
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .about__content-link{
+        justify-self: flex-start;
+    }
+
 }
