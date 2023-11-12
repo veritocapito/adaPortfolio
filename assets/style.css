@@ -37,8 +37,6 @@ a {
         background: var(--gray);
         height: 95px;
         width: 100%;
-        position: fixed;
-        top: 0;
         transition: 0.4s;
         padding: 2rem 0;
     }
@@ -118,7 +116,6 @@ a {
         align-items: center;
         padding: 2rem 0;
         min-height: calc(100vh - 95px);
-        margin-top: 95px;
     }
 
     .about__content{
@@ -202,7 +199,7 @@ a {
     }
 
     .projects__box{
-        width: 300px;
+        max-width: 300px;
         padding: 1rem;
         background-color: #fff;
         border: 1px solid var(--violet);
@@ -225,7 +222,9 @@ a {
 
     .projects__text{
         max-width: 960px;
-        margin: 2rem auto;
+        margin: 0 auto;
+        padding: 1rem;
+        line-height: 1.5;
     }
 
     /* Skills */
@@ -246,8 +245,9 @@ a {
 
     .skills__header-text{
         max-width: 700px;
-        padding: 3rem;
+        padding: 2.3rem;
         margin: 0 auto;
+        line-height: 1.5;
     }
 
     .skills__info{
@@ -285,7 +285,39 @@ a {
         width: 120px;
     }
 
+    article{
+        background-color: var(--lightViolet);
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        color: var(--darkViolet);
+    }
 
+    .bi-quote{
+        font-size: 6em;
+        transform: rotate(180deg);
+    }
+
+    blockquote{
+        line-height: 1.5;
+    }
+
+    article h3{
+        margin: 2rem 0;
+        font-size: 2em;
+        font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Education */
+
+
+    /* Contact */
+
+
+    /* Footer */
 }
 
 @media (width >= 768px)  {
@@ -362,5 +394,9 @@ a {
         flex-wrap: wrap;
         padding: 0 5rem;
         max-width: 1000px;
+    }
+
+    blockquote{
+        max-width: 800px;
     }
 }
