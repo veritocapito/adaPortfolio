@@ -27,7 +27,7 @@
                     <li class="nav__list-item"><a href="#projects">Projects</a></li>
                     <li class="nav__list-item"><a href="#skills">Skills</a></li>
                     <li class="nav__list-item"><a href="#education">Education</a></li>
-                    <li class="nav__list-item contact"><a href="#contact">Contact</a></li>
+                    <li class="nav__list-item nav-contact"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -157,46 +157,48 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div>
-                <h2>Get In Touch</h2>
-                <h4>Have any project on mind?</h4>
-                <div>
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__text">
+                    <h2 class="contact__title">Get In Touch</h2>
+                    <h4>Have any project on mind?</h4>
+                </div>
+                <div class="contact__box">
                     <div>
-                        <a href="https://www.linkedin.com/in/vscapobianco/" target="_blank"><i class="bi bi-linkedin"></i> vcapobianco</a>
+                        <a class="contact__box-icon" href="https://www.linkedin.com/in/vscapobianco/" target="_blank"><i class="bi bi-linkedin"></i> vcapobianco</a>
                     </div>
                     <div>
-                        <a href="https://github.com/veritocapito" target="_blank"><i class="bi bi-github"></i> veritocapito</a>
+                        <a class="contact__box-icon" href="https://github.com/veritocapito" target="_blank"><i class="bi bi-github"></i> veritocapito</a>
                     </div>
                     <div>
-                        <a href="https://wa.me/541130954760?text=Hi!%20I%27m%20interested%20in" target="_blank"><i class="bi bi-whatsapp"></i> +54 11 3095 4760</a>
+                        <a class="contact__box-icon" href="https://wa.me/541130954760?text=Hi!%20I%27m%20interested%20in" target="_blank"><i class="bi bi-whatsapp"></i> +5411-3095-4760</a>
                     </div>
                     <div>
-                        <a href="mailto:veritocapito@gmail.com"><i class="bi bi-envelope-at-fill"></i> veritocapito@gmail.com</a>
+                        <a class="contact__box-icon" href="mailto:veritocapito@gmail.com"><i class="bi bi-envelope-at-fill"></i> veritocapito@gmail.com</a>
                     </div>
                 </div>
             </div>
-            <div>
-                <form>
-                    <h2>Let's talk!</h2>
-                    <div>
-                        <label for="name">Name: *</label>
+            <div class="contact__info">
+                <form class="contact__form" id="contact__form">
+                    <h2 class="contact__title">Let's talk!</h2>
+                    <div class="contact__form-input">
+                        <label for="name">Name:<span>*</span></label>
                         <input type="text" name="name" id="name" placeholder="e.g. John">
                     </div>
-                    <div>
-                        <label for="lastName">Last Name: *</label>
+                    <div class="contact__form-input">
+                        <label for="lastName">Last Name:<span>*</span></label>
                         <input type="text" name="lastName" id="lastName" placeholder="e.g. Doe">
                     </div>
-                    <div>
-                        <label for="email">Email: *</label>
-                        <input type="email" name="email" id="email" placeholder="e.g.  name@mail.com">
+                    <div class="contact__form-input">
+                        <label for="email">Email:<span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="e.g. name@mail.com">
                     </div>
-                    <div>
-                        <label for="message">Message: *</label>
-                        <textarea name="message" id="message" placeholder="type your message here"></textarea>
+                    <div class="contact__form-input">
+                        <label for="message">Message:<span>*</span></label>
+                        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
                     </div>
-                    <p></p>
-                    <button type="submit">Send Message</button>
+                    <p class="contact__form-message"></p>
+                    <button class="contact__form-btn" type="submit">Send Message</button>
                 </form> 
             </div>
         </section>

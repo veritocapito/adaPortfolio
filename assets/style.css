@@ -236,7 +236,7 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--lightPink);
+        background-color: var(--lightViolet);
         padding: 5rem 0;
     }
 
@@ -389,7 +389,125 @@ a {
 
     /* Contact */
 
+    .contact{
+        background: var(--white);
+        padding: 5rem 1rem;
+        margin: 0 auto;
+    }
 
+    .contact__title{
+        color: var(--darkViolet);
+        font-size: 1.7rem;
+        padding-bottom: 1.5rem;
+        text-shadow: 1px 1px rgba(12, 12, 69, 0.5);
+    }
+
+    .contact__text{
+        text-align: center;
+    }
+
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .contact__box{
+        display: flex;
+        padding: 4rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: 280px;
+        height: 240px;
+    }
+
+    .contact__box-icon{
+        color: #373f47;
+        transition: all 0.3s ease-in-out;
+    }
+
+    i.bi{
+        font-size: 25px;
+    }
+
+    .contact__box-icon:hover i.bi{
+        color: #da4167;
+        font-weight: bold;
+    }
+
+    .contact__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        min-height: 90vh;
+        min-width: 280px;
+        max-width: 400px;
+    }
+    
+    .contact__form{ 
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    span{
+        color: var(--darkPink);
+    }
+
+    .contact__form-input{
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .contact__form-input input, .contact__form-input textarea {
+        min-width: 280px;
+        height: 55px;
+        border: 1px solid #ddd;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #8a8fa3;
+    }
+
+    .contact__form-input textarea{
+        resize: none;
+        padding-top: 15px;
+    }
+
+    .contact__form-input input:focus, .contact__form-input textarea:focus{
+        outline: 1px solid var(--pink);
+    }
+
+    .contact__form-btn {
+        font-weight: 500;
+        text-align: center;
+        border: none;
+        padding: 0 30px;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 48px;
+        color: var(--white);
+        cursor: pointer;
+        transition: all 0.3s ease-out 0s;
+        box-shadow: 0px 5px 8px 0px rgba(152, 152, 152, 0.46);
+        background-color: var(--darkPink);
+        text-transform: uppercase;
+    }
+
+    .contact__form-btn:hover{
+        background-color: var(--darkViolet);
+    }
     /* Footer */
 }
 
@@ -413,13 +531,13 @@ a {
         width: 100px;
     }
 
-    .contact{
+    .nav-contact{
         background-color: var(--darkPink);
         padding: 1rem 1.5rem;
         margin-left: 10px;
     }
 
-    .contact:hover{
+    .nav-contact:hover{
         background-color: var(--gray);
         outline-style: solid;
         outline-color: var(--darkPink);
@@ -471,5 +589,43 @@ a {
 
     blockquote{
         max-width: 800px;
+    }
+
+    /* Contact */
+
+    .contact{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    .contact__title, .contact__form-btn {
+        align-self: flex-start;
+    }
+
+    .contact__text{
+        width: 280px;
+        text-align: left;
+    }
+
+    .contact__container{
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 6.5rem;
+    }
+
+    .contact__box{
+        gap: 2.5rem;
+    }
+
+    .contact__info{
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        padding-top: 2rem;
+    }
+
+    .contact__form-input input, .contact__form-input textarea{
+        width: 400px;
     }
 }
