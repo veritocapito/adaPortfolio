@@ -291,6 +291,7 @@ a {
         width: 120px;
     }
 
+    /* Article */
     article{
         background-color: var(--darkViolet);
         padding: 5rem 2rem;
@@ -514,7 +515,9 @@ a {
     .contact__form-btn:hover{
         background-color: var(--darkViolet);
     }
+
     /* Footer */
+
     footer{
         background-color: var(--darkViolet);
         color: var(--lightPink);
@@ -634,6 +637,8 @@ a {
         padding: 0 5rem;
         max-width: 1000px;
     }
+    
+    /* Article */
 
     blockquote{
         max-width: 800px;
@@ -680,6 +685,8 @@ a {
     .contact__form-input input, .contact__form-input textarea{
         width: 400px;
     }
+
+    /* Footer */
 
     .credits__nav{
         display: flex;
