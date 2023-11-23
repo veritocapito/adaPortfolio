@@ -30,7 +30,7 @@ a {
     color: var(--darkPink);
 }
 
-@media (width >= 320px){
+/* @media (width >= 320px){ */
 
     /* Header + Nav */
     header{
@@ -115,11 +115,10 @@ a {
     .about{
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2.5rem;
         background-color: var(--lightPink);
         align-items: center;
-        padding: 2rem 0;
-        min-height: calc(100vh - 95px);
+        padding: 4rem 0;
     }
 
     .about__content{
@@ -424,7 +423,6 @@ a {
         align-items: flex-start;
         gap: 1.5rem;
         width: 280px;
-        height: 240px;
     }
 
     .contact__box-icon{
@@ -564,7 +562,7 @@ a {
         background-color: var(--white);
         border: 2px solid var(--darkPink);
     }
-}
+/* } */
 
 @media (width >= 768px)  {
 
@@ -612,6 +610,7 @@ a {
         flex-direction: row;
         justify-content: center;
         padding: 2rem;
+        min-height: calc(100vh - 95px);
     }
 
     .about__content-link{
